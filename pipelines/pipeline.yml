@@ -4,7 +4,7 @@ resources:
     type: git
     icon: github
     source:
-      uri: https://github.com/felipeg48/concourse-with-vagrant
+      uri: https://github.com/felipeg48/concourse-with-vagrant.git
 
 jobs:
   - name: job-test
