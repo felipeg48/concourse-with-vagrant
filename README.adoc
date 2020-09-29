@@ -30,8 +30,9 @@ fly -t test login --concourse-url http://192.168.50.10:8080
 
 [source,shell]
 fly -t test sp -p test -c pipelines/pipeline.yml -n
-fly -t test unpause-pipeline -p test
-
+fly -t test up -p test
+fly -t test tj -j test/job-test
+fly -t test watch -j test/job-test
 
 == Remove Pipelines
 
