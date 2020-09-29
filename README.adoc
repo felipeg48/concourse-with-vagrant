@@ -1,5 +1,24 @@
 = Concourse with Vagrant
 
+== Setup
+
+*Requirements*
+
+- Download and Install https://www.virtualbox.org/wiki/Downloads[Viratul Box^]
+- Download https://www.vagrantup.com/downloads.html[Vagrant^]
+
+. Clone this repository
++
+[source.shell]
+git clone https://github.com/felipeg48/concourse-with-vagrant.git
+
+. Use Vagrant to setup the infrastructure
++
+[source,shell]
+cd concourse-with-vagrant
+vagrant up
+
+You should have a Concourse and a Worker node up and running.
 
 == Test
 
