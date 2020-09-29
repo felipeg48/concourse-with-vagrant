@@ -1,11 +1,11 @@
 = Concourse with Vagrant
 
-== Setup
-
-*Requirements*
+== Requirements
 
 - Download and Install https://www.virtualbox.org/wiki/Downloads[Viratul Box^]
 - Download https://www.vagrantup.com/downloads.html[Vagrant^]
+
+== Setup
 
 . Clone this repository
 +
