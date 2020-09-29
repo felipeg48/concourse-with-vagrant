@@ -1,0 +1,16 @@
+---
+resources:
+  - name: git-test
+    type: git
+    icon: github
+    source:
+      uri: https://github.com/felipeg48/concourse-with-vagrant
+
+jobs:
+  - name: job-test
+    public: true
+    plan:
+      - get: git-test
+        trigger: false
+      - task: simple-task
+        file: git-test/pipelines/task.yml

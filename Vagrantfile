@@ -18,10 +18,10 @@ Vagrant.configure("2") do |config|
     end
 
     (1..N).each do |i|
-        config.vm.define "worker-#{i}" do |worker|
+        config.vm.define "concourse-worker-#{i}" do |worker|
             worker.vm.box = IMAGE_NAME
             worker.vm.network "private_network", ip: "192.168.50.#{i + 11}"
-            worker.vm.hostname = "worker-#{i}"
+            worker.vm.hostname = "concourse-worker-#{i}"
             worker.vm.synced_folder "keys/", "/vagrant"
             worker.vm.provision :shell, :path => "setup/worker-setup.sh"
         end

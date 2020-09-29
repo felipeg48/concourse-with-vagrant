@@ -1,1 +1,14 @@
 = Concourse with Vagrant
+
+
+== Test
+
+Browser: http://192.168.50.10:8080[^]
+Username/Password: `admin`/`admin`
+
+[source,shell]
+fly -t test login --concourse-url http://192.168.50.10:8080
+
+[source,shell]
+fly -t test sp -p test -c pipelines/pipeline.yml
+
