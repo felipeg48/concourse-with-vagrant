@@ -45,7 +45,8 @@ cat >/etc/systemd/system/concourse_worker.service <<-EOF
                --work-dir=/var/lib/concourse \
                --tsa-host=192.168.50.10:2223 \
                --tsa-public-key=/etc/concourse/tsa_host_key.pub \
-               --tsa-worker-private-key=/etc/concourse/worker_key
+               --tsa-worker-private-key=/etc/concourse/worker_key \
+               --runtime=containerd
 
         User=root
         Group=root
