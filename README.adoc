@@ -2,7 +2,7 @@
 
 == Requirements
 
-- Download and Install https://www.virtualbox.org/wiki/Downloads[Viratul Box^]
+- Download and Install https://www.virtualbox.org/wiki/Downloads[Virtual Box^]
 - Download https://www.vagrantup.com/downloads.html[Vagrant^]
 
 == Setup
